@@ -8,5 +8,6 @@ pagina = requests.get('https://coinmarketcap.com')
 heelDeHtml = BeautifulSoup(pagina.content, 'html.parser')
 
 body = heelDeHtml.find('tbody')
-
 print(body.prettify())
+
+print("changes")
